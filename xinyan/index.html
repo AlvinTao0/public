@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+<title>鑫燕</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<link href="css/page.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script>
+	$(function(){
+		var loadind=0;
+		var imgind=0;
+		var loadsum=$("img").length;
+		var loadtimer=setInterval(function(){
+			if(loadind<100){
+				loadind++;
+				$("#baifen").html(loadind);
+			}
+			else{
+				clearInterval(loadtimer);
+			}
+		},50)
+		$("img").each(function(){
+			$(this).attr("src",$(this).attr("data-src")).load(function(){
+				imgind++;
+				if(loadind<=parseInt(imgind/loadsum*100)){
+					loadind=parseInt(imgind/loadsum*100)
+					$("#baifen").html(loadind);
+				}
+				else{
+					clearInterval(loadtimer);
+				}
+			})
+		})
+	})
+</script>
+</head>
+<body>
+<div class="loading">
+	<div><span id="baifen">0</span>%</div>
+</div>
+<div class="wrap">
+<section class="jt1">
+	<div class='yan' style="display:none;"></div>
+</section>
+<section class="jt2 swiper-container" id="swiper-container" style=" -webkit-transform: translate3d(100%,0, 0);">
+	<div class="xinyanshuo"><img data-src="images/xinyanshuo.png" alt="" class="autoimg"></div>
+	<div class='yan2' style="display:none;"></div>
+	<div class='yanying' style="display:none;"></div>
+	<div class="swiper-wrapper">
+		<div class="swiper-slide p1">
+			<div class="p1_1"><img data-src="images/P1_1.png" alt="" class="autoimg"></div>
+			<div class="p1_2"><img data-src="images/P1_2.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p21">
+			<div class="p2_1"><img data-src="images/P2_1.png" alt="" class="autoimg"></div>
+			<div class="p21_2"><img data-src="images/P21_2.png" alt="" class="autoimg">
+				<div class="p21_2_1"><img data-src="images/P21_2_1.png" alt="" class="autoimg"></div>
+				<div class="p21_2_2"><img data-src="images/P21_2_2.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p21_3"><img data-src="images/P21_3.png" alt="" class="autoimg"></div>
+			<div class="p21_4"><img data-src="images/P21_4.png" alt="" class="autoimg">
+				<div class="p21_4_1"><img data-src="images/P21_4_1.png" alt="" class="autoimg"></div>
+				<div class="p21_4_2"><img data-src="images/P21_2_1.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p21_5"><img data-src="images/P21_1.png" alt="" class="autoimg"></div>
+			<div class="yanzi2"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao2"><img data-src="images/paopao1.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p22">
+			<div class="p2_1"><img data-src="images/P2_1.png" alt="" class="autoimg"></div>
+			<div class="p22_2"><img data-src="images/P22_2.png" alt="" class="autoimg"></div>
+			<div class="p22_3"><img data-src="images/P22_3.png" alt="" class="autoimg"></div>
+			<div class="p22_4"><img data-src="images/P22_4.png" alt="" class="autoimg"></div>
+			<div class="p22_5"><img data-src="images/P22_5.png" alt="" class="autoimg"></div>
+			<div class="yanzi3"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao3"><img data-src="images/paopao2.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p23">
+			<div class="p2_1"><img data-src="images/P2_1.png" alt="" class="autoimg"></div>
+			<div class="p23_2"><img data-src="images/P23_2.png" alt="" class="autoimg">
+				<div class="p23_2_1">100</div>
+			</div>
+			<div class="p23_3"><img data-src="images/P23_3.png" alt="" class="autoimg">
+				<div class="p23_3_1"><img data-src="images/P23_3_1.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p23_4"><img data-src="images/P23_4.png" alt="" class="autoimg"></div>
+			<div class="yanzi1"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao1"><img data-src="images/paopao3.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p3">
+			<div class="p3_1"><img data-src="images/P3_1.png" alt="" class="autoimg"></div>
+			<div class="p3_2"><img data-src="images/P3_2.png" alt="" class="autoimg">
+				<div class="p3_3"><img data-src="images/P3_3.png" alt="" class="autoimg"></div>
+				<div class="p3_5"><img data-src="images/P3_5.png" alt="" class="autoimg"></div>
+				<div class="p3_4"><img data-src="images/P3_4.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p3_6"><img data-src="images/P3_6.png" alt="" class="autoimg"></div>
+			<div class="yanzi5"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao5"><img data-src="images/paopao4.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p4">
+			<div class="p4_1"><img data-src="images/P4_1.png" alt="" class="autoimg"></div>
+			<div class="p4_2"><img data-src="images/P4_2.png" alt="" class="autoimg"></div>
+			<div class="yanzi"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao"><img data-src="images/paopao5.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p5">
+			<div class="p5_1"><img data-src="images/P5_1.png" alt="" class="autoimg"></div>
+			<div class="p5_2"><img data-src="images/P5_2.png" alt="" class="autoimg">
+				<div class="p5_2_1"><img data-src="images/P5_2_1.png" alt="" class="autoimg"></div>
+				<div class="p5_2_2"><img data-src="images/P5_2_2.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p5_3"><img data-src="images/P5_3.png" alt="" class="autoimg"></div>
+			<div class="p5_4"><img data-src="images/P5_4.png" alt="" class="autoimg"></div>
+			<div class="p5_5"><img data-src="images/P5_5.png" alt="" class="autoimg"></div>
+			<div class="p5_6"><img data-src="images/P5_6.png" alt="" class="autoimg"></div>
+			<div class="yanzi3"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao3"><img data-src="images/paopao6.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p6">
+			<div class="p6_1"><img data-src="images/P6_1.png" alt="" class="autoimg"></div>
+			<div class="p6_2"><img data-src="images/P6_2.png" alt="" class="autoimg">
+				<div class="p6_2_1"><img data-src="images/P6_2_1.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p6_3"><img data-src="images/P6_3.png" alt="" class="autoimg">
+				<div class="p6_3_1"><img data-src="images/P6_3_1.png" alt="" class="autoimg"></div>
+				<div class="p6_3_2"><img data-src="images/P6_3_2.png" alt="" class="autoimg"></div>
+				<div class="p6_3_3"><img data-src="images/P6_3_3.png" alt="" class="autoimg"></div>
+				<div class="p6_3_4"><img data-src="images/P6_3_4.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p6_4"><img data-src="images/P6_4.png" alt="" class="autoimg"></div>
+			<div class="yanzi3"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao3"><img data-src="images/paopao7.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p7">
+			<div class="p7_1"><img data-src="images/P7_1.png" alt="" class="autoimg"></div>
+			<div class="p7_2"><img data-src="images/P7_2.png" alt="" class="autoimg"></div>
+			<div class="p7_6">
+				<div class="p7_3"><i></i></div>
+				<div class="p7_4"><i></i></div>
+				<div class="p7_5"><i></i></div>
+			</div>
+			<div class="yanzi5"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao5"><img data-src="images/paopao8.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p8">
+			<div class="p8_1"><img data-src="images/P8_1.png" alt="" class="autoimg"></div>
+			<div class="p8_2"><img data-src="images/P8_2.png" alt="" class="autoimg">
+				<div class="p8_2_1"><img data-src="images/P8_2_1.png" alt="" class="autoimg"></div>
+				<div class="p8_2_2"><img data-src="images/P8_2_2.png" alt="" class="autoimg"></div>
+				<div class="p8_2_3"><img data-src="images/P8_2_3.png" alt="" class="autoimg"></div>
+				<div class="p8_2_4"><img data-src="images/P8_2_4.png" alt="" class="autoimg"></div>
+				<div class="p8_2_5"><img data-src="images/P8_2_5.png" alt="" class="autoimg"></div>
+				<div class="p8_2_6"><img data-src="images/P8_2_6.png" alt="" class="autoimg"></div>
+				<div class="p8_3"><img data-src="images/P8_3.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="yanzi5"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao5"><img data-src="images/paopao9.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p9">
+			<div class="p9_1"><img data-src="images/P9_1.png" alt="" class="autoimg"></div>
+			<div class="p9_2"><img data-src="images/P9_2.png" alt="" class="autoimg">
+				<div class="p9_2_1"><img data-src="images/P9_2_1.png" alt="" class="autoimg"></div>
+				<div class="p9_2_2"><img data-src="images/P9_2_2.png" alt="" class="autoimg"></div>
+				<div class="p9_2_3"><img data-src="images/P9_2_3.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p9_3"><img data-src="images/P9_3.png" alt="" class="autoimg"></div>
+			<div class="p9_4"><img data-src="images/P9_4.png" alt="" class="autoimg"></div>
+			<div class="yanzi5"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao5"><img data-src="images/paopao10.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p10">
+			<div class="p10_1"><img data-src="images/P10_1.png" alt="" class="autoimg"></div>
+			<div class="p10_2">
+				<div class="p10_2_1"><img data-src="images/P10_2_1.png" alt="" class="autoimg"></div>
+				<div class="p10_2_2"><img data-src="images/P10_2_2.png" alt="" class="autoimg"></div>
+				<div class="p10_2_3"><img data-src="images/P10_2_3.png" alt="" class="autoimg"></div>
+				<div class="p10_2_4"><img data-src="images/P10_2_4.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p10_3">
+				<div class="p10_3_1"><img data-src="images/P10_3_1.png" alt="" class="autoimg"></div>
+				<div class="p10_3_2"><img data-src="images/P10_3_2.png" alt="" class="autoimg"></div>
+				<div class="p10_3_3"><img data-src="images/P10_3_3.png" alt="" class="autoimg"></div>
+			</div>
+			<div class="p10_4"><img data-src="images/P10_4.png" alt="" class="autoimg"></div>
+			<div class="yanzi5"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao5"><img data-src="images/paopao11.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p11">
+			<div class="p11_1"><img data-src="images/P11_1.png" alt="" class="autoimg"></div>
+			<div class="p11_2"><img data-src="images/P11_2.png" alt="" class="autoimg"></div>
+			<div class="p11_3"><img data-src="images/P11_3.png" alt="" class="autoimg"></div>
+			<div class="p11_4"><img data-src="images/P11_4.png" alt="" class="autoimg"></div>
+			<div class="p11_5"><img data-src="images/P11_5.png" alt="" class="autoimg"></div>
+			<div class="p11_6"><img data-src="images/P11_6.png" alt="" class="autoimg"></div>
+			<div class="p11_7"><img data-src="images/P11_7.png" alt="" class="autoimg"></div>
+			<div class="yanzi2"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao2"><img data-src="images/paopao12.png" alt="" class="autoimg"></div>
+		</div>
+
+		<div class="swiper-slide p12">
+			<div class="p12_1"><img data-src="images/P12_1.png" alt="" class="autoimg"></div>
+			<div class="p12_2"><img data-src="images/P12_2.png" alt="" class="autoimg"></div>
+			<div class="p12_3"><img data-src="images/P12_3.png" alt="" class="autoimg"></div>
+			<div class="p12_4"><img data-src="images/P12_4.png" alt="" class="autoimg"></div>
+			<div class="p12_5"><img data-src="images/P12_5.png" alt="" class="autoimg"></div>
+			<div class="yanzi2"><img data-src="images/yanzi.png" alt="" class="autoimg"></div>
+			<div class="paopao2"><img data-src="images/paopao13.png" alt="" class="autoimg"></div>
+		</div>
+		<div class="swiper-slide p13">
+			<div class="p13_1"><img data-src="images/P13_1.png" alt="" class="autoimg"></div>
+			<div class="jt16_2">
+				<div class="jt16_2_1"><img data-src="images/ex1.png" class="autoimg" alt=""></div>
+				<div class="jt16_2_2"><img data-src="images/ex2.png" class="autoimg" alt=""></div>
+				<div class="jt16_2_3"><img data-src="images/ex3.png" class="autoimg" alt=""></div>
+				<div class="jt16_2_4"><img data-src="images/ex4.png" class="autoimg" alt=""></div>
+				<div class="jt16_2_5"><img data-src="images/ex5.png" class="autoimg" alt=""></div>
+				<div class="jt16_2_6"><img data-src="images/ex6.png" class="autoimg" alt=""></div>
+			</div>
+			<div class="jt16_3">
+				<div class="jt16_3_1"><img data-src="images/tex1.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_2"><img data-src="images/tex2.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_3"><img data-src="images/tex3.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_4"><img data-src="images/tex4.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_5"><img data-src="images/tex5.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_6"><img data-src="images/tex6.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_7"><img data-src="images/tex7.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_8"><img data-src="images/tex8.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_9"><img data-src="images/tex9.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_10"><img data-src="images/tex10.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_11"><img data-src="images/tex11.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_12"><img data-src="images/tex12.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_13"><img data-src="images/tex13.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_14"><img data-src="images/tex14.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_15"><img data-src="images/tex15.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_16"><img data-src="images/tex16.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_17"><img data-src="images/tex17.png" class="autoimg" alt=""></div>
+				<div class="jt16_3_18"><img data-src="images/tex18.png" class="autoimg" alt=""></div>
+			</div>
+			<div class="jt16_4">
+				<img data-src="images/P11_7.png" alt="" class="autoimg">
+			</div>
+		</div>
+
+		<div class="swiper-slide p14">
+			<div class="p14_1"><img data-src="images/P14_1.png" alt="" class="autoimg"></div>
+			<div class="p14_2">
+				<div><img data-src="images/P14_2_1.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_2.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_3.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_4.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_5.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_6.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_7.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_8.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_9.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_10.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_11.png" class="autoimg" alt=""></div>
+				<div><img data-src="images/P14_2_12.png" class="autoimg" alt=""></div>
+			</div>
+		</div>
+	</div>	
+</section>
+</div>
+</body>
+<script src="js/idangerous.swiper.min.js"></script>
+<script type="text/javascript">
+$("html").css("fontSize",$(window).width()/160*7+"px");
+$(window).resize(function(){$("html").css("fontSize",$(window).width()/160*7+"px");});
+
+
+function jt1(){
+	$(".swiper-slide:eq(1) div").hide();
+	$(".swiper-slide:eq(0) div").hide();
+	$(".yan").attr("style","-webkit-animation: yan 3s step-start both;");
+	$(".yan2").attr("style","-webkit-animation: fadein 1.5s 3s linear both;");
+	setTimeout(function(){
+		$(".yan").attr("style","-webkit-animation: fadeout 1.5s linear both;");
+		$(".yanying").attr("style","-webkit-animation: fadein 1s 1s linear both;");
+	},3000)
+	setTimeout(function(){
+		$(".yan2,.yanying").attr("style","-webkit-animation: fei 1s .2s linear both;");
+		$(".jt2").attr("style","-webkit-animation: jt2 1s 1.2s linear both;");
+		setTimeout(function(){
+			jt2();
+			$(".jt1,.yan2,.yanying").remove();
+		},2200)
+	},5500)
+	
+}
+
+function jt2(){
+	setTimeout(function(){
+		$(".swiper-slide-active div").show();
+	},500)
+}	
+var timer=null;var timertou=null;var timertou2=null;
+$(window).load(function(){
+	$(".loading").fadeOut("400");
+	jt1();
+	$(".swiper-slide-active div").hide();
+	var owidth=$(window).width();
+	var oheight=$(window).height();
+	$("#swiper-container").css({"width":owidth,"height":oheight});
+	var mySwiper = new Swiper('#swiper-container',{
+			mode:'horizontal',
+			loop: false,
+			resistance:"100%",
+			onSlideChangeEnd:function(swiper){
+				$(".swiper-slide").eq(mySwiper.activeIndex-1).find("div").hide();
+				$(".swiper-slide").eq(mySwiper.activeIndex+1).find("div").hide();
+				$(".swiper-slide").eq(mySwiper.activeIndex).find("div").show();
+				clearInterval(timertou);
+				clearTimeout(timertou2);
+				if(mySwiper.activeIndex==8){
+					timertou2=setTimeout(function(){
+						timertou=setInterval(function(){
+							$(".p7_6").hide();
+							setTimeout(function(){
+								$(".p7_6").show();
+							},100)
+						},5200)
+					},100)
+				}
+				if(mySwiper.activeIndex==3){
+					clearInterval(timer);
+					$(".p23_2_1").html("100");
+					setTimeout(function(){
+						var sum=100;
+							timer=setInterval(function(){
+							sum-=10;
+							$(".p23_2_1").html(sum);
+							if(sum==0){
+								clearInterval(timer);
+							}
+						},100)
+					},700)
+				}
+			},
+			onTouchStart: function(swiper){
+			 }
+		})
+})
+</script>
+</html>

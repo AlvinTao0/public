@@ -1,0 +1,21 @@
+*{margin:0;padding:0;}
+body{color:#333;font-size: 14px;font-family: 'Microsoft Yahei'}
+div,p,h2,h3,span{font-weight: 200}
+input{height: 25px;}
+img{cursor: pointer;}
+.container{width: 100%;max-width: 500px;margin: 0 auto;height:100%;overflow-y: scroll;background-color: rgb(246,246,246);box-shadow: 0 0 5px #ccc;position: relative;}
+.add{position: absolute;right: 20px;top:14px;z-index: 20}
+.title{border-bottom: 2px solid #ccc;padding-left: 30px;line-height: 50px;color:black;font-size: 30px;}
+.box{border-bottom: 1px solid #ccc;margin:5px 10px;padding:5px 10px;}
+.active{background-color: rgba(0,255,0,0.3)}
+.btm{position: relative;text-align: right;}
+.tele{position: absolute;left: 20px;top:10px;}
+.Name{font-size: 20px;}
+.addman,.modifyman{padding:20px 30px;margin:20px 30px;border-radius: 5px;display: none;}
+.addman span,.modifyman span{display: block;line-height: 25px;border:1px solid #ccc;margin-top: 10px;background-color: skyblue;text-align: center;width: 96%}
+.mintitle{line-height: 30px;}
+.searchman{padding:5px 35px;}
+.searchman input{font-size: 15px;}
+.search-sure{display: inline-block;height: 25px;background-color: orange;text-align: center;width: 35%;font-size: 17px}
+.name{width: 35%;}
+.telephone{width: 58%;}
